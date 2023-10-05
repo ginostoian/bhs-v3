@@ -8,7 +8,7 @@ import { useState, useEffect, useRef } from "react";
 // - svg: icon of the feature
 const features = [
   {
-    name: "Emails",
+    name: "Bathrooms",
     description: (
       <>
         <ul className="space-y-1">
@@ -17,7 +17,10 @@ const features = [
             "DNS setup to avoid spam folder (DKIM, DMARC, SPF in subdomain)",
             "Webhook to receive & forward emails",
           ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
+            <li
+              key={item}
+              className="flex items-center gap-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -69,7 +72,7 @@ const features = [
     ),
   },
   {
-    name: "Payments",
+    name: "Kitchens",
     description: (
       <>
         <ul className="space-y-2">
@@ -78,7 +81,10 @@ const features = [
             "Handle webhooks to update user's account",
             "Tips to setup your account & reduce chargebacks",
           ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
+            <li
+              key={item}
+              className="flex items-center gap-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -131,7 +137,7 @@ const features = [
     ),
   },
   {
-    name: "Login",
+    name: "Full house",
     description: (
       <>
         <ul className="space-y-2">
@@ -141,7 +147,10 @@ const features = [
             "Save user data in MongoDB",
             "Private/protected pages & API calls",
           ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
+            <li
+              key={item}
+              className="flex items-center gap-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -194,13 +203,16 @@ const features = [
     ),
   },
   {
-    name: "Database",
+    name: "Extensions",
     description: (
       <>
         <ul className="space-y-2">
           {["Mongoose schema", "Mongoose plugins to make your life easier"].map(
             (item) => (
-              <li key={item} className="flex items-center gap-3">
+              <li
+                key={item}
+                className="flex items-center gap-3"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -254,7 +266,7 @@ const features = [
     ),
   },
   {
-    name: "SEO",
+    name: "Loft conversion",
     description: (
       <>
         <ul className="space-y-2">
@@ -265,7 +277,10 @@ const features = [
             "Structured data markup for Rich Snippets",
             "SEO-optimized UI components",
           ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
+            <li
+              key={item}
+              className="flex items-center gap-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -318,7 +333,7 @@ const features = [
     ),
   },
   {
-    name: "Style",
+    name: "Design",
     description: (
       <>
         <ul className="space-y-2">
@@ -327,7 +342,10 @@ const features = [
             "20+ themes with daisyUI",
             "Automatic dark mode",
           ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
+            <li
+              key={item}
+              className="flex items-center gap-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -430,21 +448,25 @@ const FeaturesListicle = () => {
   }, [featureSelected, hasClicked]);
 
   return (
-    <section className="py-24" id="features">
+    <section
+      className="py-24"
+      id="features"
+    >
       <div className="max-w-3xl mx-auto">
         <div className="bg-base-100 max-md:px-8 max-w-3xl">
           <p className="text-accent font-medium text-sm font-mono mb-3">
-            const launch_time = &quot;Today&quot;;
+            project_launch_time = &quot;Today&quot;;
           </p>
           <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-8">
             {/* 💡 COPY TIP: Remind visitors about the value of your product. Why do they need it? */}
-            Supercharge your app instantly, launch faster, make $
+            Everything that can go wrong, usually does. We are the solution.
           </h2>
           <div className="text-base-content/80 leading-relaxed mb-8 lg:text-lg">
             {/* 💡 COPY TIP: Explain how your product delivers what you promise in the headline. */}
-            Login users, process payments and send emails at lightspeed. Spend
-            your time building your startup, not integrating APIs. ShipFast
-            provides you with the boilerplate code you need to launch, FAST.
+            Save yourself from the countless hours of uncertainty, worry and
+            stress. We are here to make your life easier and put an end to
+            renovation chaos. From bathroom renovations to full home
+            renovations, extensions and loft conversions, we got your back.
           </div>
         </div>
       </div>
@@ -497,7 +519,10 @@ const FeaturesListicle = () => {
         </div>
       </div>
       {/* Just used to know it's the end of the autoscroll feature (optional, see useEffect) */}
-      <p className="opacity-0" ref={featuresEndRef}></p>
+      <p
+        className="opacity-0"
+        ref={featuresEndRef}
+      ></p>
     </section>
   );
 };

@@ -30,7 +30,10 @@ const TestimonialsAvatars = ({ priority = false }) => {
       {/* AVATARS */}
       <div className={`-space-x-5 avatar-group justy-start`}>
         {avatars.map((image, i) => (
-          <div className="avatar w-12 h-12" key={i}>
+          <div
+            className="avatar w-12 h-12"
+            key={i}
+          >
             <Image
               src={image.src}
               alt={image.alt}
@@ -63,8 +66,10 @@ const TestimonialsAvatars = ({ priority = false }) => {
         </div>
 
         <div className="text-base text-base-content/80">
-          <span className="font-semibold text-base-content">32</span> makers
-          ship faster
+          <span className="font-semibold text-base-content"> 11+ years</span> of
+          experience | {">"}
+          <span className="font-semibold text-base-content"> 489</span> happy
+          home owners
         </div>
       </div>
     </div>
